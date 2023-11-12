@@ -6,7 +6,7 @@ let heroInput = document.getElementById("hero-input")
 
 searchButton.addEventListener("click", () => {
 
-    fetch(`http://localhost:8080/superheroes.php?input=${heroInput.value}`)
+    fetch(`superheroes.php?input=${heroInput.value}`)
     .then(response => response.text())
     .then(data => {
         result.innerHTML = data
