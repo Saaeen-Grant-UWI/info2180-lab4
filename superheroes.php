@@ -61,6 +61,7 @@ $superheroes = [
       "alias" => "Scarlett Witch",
       "biography" => "Notably powerful, Wanda Maximoff has fought both against and with the Avengers, attempting to hone her abilities and do what she believes is right to help the world.",
   ], 
+  
 ];
 
 ?>
@@ -83,7 +84,7 @@ $superheroes = [
     <?php 
         foreach ($superheroes as $superhero) { 
             if (in_array($query, [strtoupper(str_replace(" ","",$superhero['name'])), strtoupper(str_replace(" ","",$superhero['alias']))])) { 
-                $foundHero += $superhero;
+                $foundHero = $superhero;
             }
         }
     ?>
