@@ -67,7 +67,7 @@ $superheroes = [
 
 <?php 
     
-    $query = htmlspecialchars(strtoupper(str_replace(" ","",$_GET['input'])));
+    $query = strtoupper(str_replace(" ", "", htmlspecialchars($_GET['input'])));
     $foundHero = [];
 
 ?>
